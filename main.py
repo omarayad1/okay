@@ -94,4 +94,19 @@ def eval_bf(code):
         pc += inc
 
 if __name__ == '__main__':
-    eval_bf("okaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaay[okaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaayokaaaaayokaaaaayokaaaaayokaaaayokaaaaayokaaayokaaayokaaayokaaayokaaaaaay]okaaaayokaaaaayokaaaaayokayokaaaayokaaaaayokayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokayokayokaaaaayokaaaaayokaaaaayokayokaaaayokaaaaayokaaaaayokayokaaayokaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokaaaaayokayokaaaayokayokaaaaayokaaaaayokaaaaayokayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokaaaaaayokayokaaaayokaaaaayokayokaaaayokay")
+    try:
+        data = open(sys.argv[1]).read()
+        eval_bf(data)
+    except IndexError:
+        print "Entering REPL mode"
+        while True:
+            try:
+                print "Okay >>",
+                eval_bf(raw_input())
+                ptr = 0
+                tape = [0]*(3*10**4)
+            except KeyboardInterrupt:
+                print "\nOkay >>",
+                eval_bf(raw_input())
+                ptr = 0
+                tape = [0]*(3*10**4)
