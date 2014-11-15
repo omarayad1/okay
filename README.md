@@ -11,8 +11,20 @@ Okay >>
 
 ### Compile & Run
 ```bash
-$ python main.py sample.okay 
+$ okay sample.okay 
 Hello World!
+```
+
+## Installation
+### Manualy
+```
+$ git clone https://github.com/omarayad1/okay.git
+$ cd okay
+$ sudo python setup.py install
+```
+### Using pip
+```
+$ sudo pip install okay
 ```
 
 ## Diffrences with Brainfuck
