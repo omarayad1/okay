@@ -36,3 +36,9 @@ $ sudo pip install okay
 + -> okaaaaay
 - -> okaaaaaay
 ```
+
+## What People Say
+
+> "its okay" - Alan Turing
+
+> "if it would run on my IAS machine that would be okay" - John von Neumann

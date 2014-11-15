@@ -9,7 +9,7 @@ setup(name='okay',
       description='Everything is just okay',
       long_discription='A Programming Language inspired by Brainfuck and believe me it is okay',
       classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 2 - Pre-Alpha',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2.7',
       ],
