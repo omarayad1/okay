@@ -18,7 +18,7 @@ Hello World!
 ```
 
 ## Installation
-### Manualy
+### Manually
 ```
 $ git clone https://github.com/omarayad1/okay.git
 $ cd okay
@@ -39,8 +39,11 @@ $ sudo pip install okay
 - -> okaaaaaay
 ```
 
-## What People Say
+## What People are Saying
 
-> "its okay" - Alan Turing
+> "its okay"
+> - Alan Turing
 
-> "if it would run on my IAS machine that would be okay" - John von Neumann
+
+> "if it would run this on my IAS machine that would be okay"
+> - John von Neumann
